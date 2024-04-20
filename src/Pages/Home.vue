@@ -1,9 +1,9 @@
 <script>
-    console.log('Profile Page');
+    console.log('Home Page');
 </script>
 
 <template>
     <div>
-        <h1>Profile Page</h1>
+        <h1>Home Page</h1>
     </div>
 </template>
