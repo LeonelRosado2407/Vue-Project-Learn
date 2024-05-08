@@ -16,13 +16,16 @@ export default {
   methods: {
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen
+    },
+    getUriCurrent() {
+      return this.$route.path
     }
   }
 }
 </script>
 
 <template>
-  <nav
+  <nav v-if="getUriCurrent() !== '/Login' && getUriCurrent() !== '/Register'"
     class="sticky top-0 z-10 block w-full max-w-full px-4 py-2 text-black bg-white border rounded-none shadow-md h-max border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
     <div class="flex items-center justify-between text-blue-gray-900">
       <div

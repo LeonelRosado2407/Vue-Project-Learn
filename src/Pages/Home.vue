@@ -1,9 +1,19 @@
 <script>
-    console.log('Home Page');
+export default {
+  data() {
+    return {
+      count: 0
+    }
+  }
+}
 </script>
 
 <template>
-    <div>
-        <h1>Home Page</h1>
-    </div>
+  <button @click="count++">Count is: {{ count }}</button>
 </template>
+
+<style scoped>
+button {
+  font-weight: bold;
+}
+</style>
